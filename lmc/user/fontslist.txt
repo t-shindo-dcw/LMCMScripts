@@ -1,0 +1,8 @@
+/usr/share/fonts/opentype/ipafont-mincho/ipam.ttf:IPA明朝
+/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf:IPAゴシック
+/usr/share/fonts/opentype/ipafont-mincho/ipamp.ttf:IPAプロポーショナル明朝
+/usr/share/fonts/opentype/ipafont-gothic/ipagp.ttf:IPAプロポーショナルゴシック
+/home/pi/lmc/user/ipam_tate.ttf:IPA明朝（縦）
+/home/pi/lmc/user/ipag_tate.ttf:IPAゴシック（縦）
+/home/pi/lmc/user/ipamp_tate.ttf:IPAプロポーショナル明朝（縦）
+/home/pi/lmc/user/ipagp_tate.ttf:IPAプロポーショナルゴシック（縦）

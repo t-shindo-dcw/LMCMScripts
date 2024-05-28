@@ -1,0 +1,16 @@
+
+[Unit]
+Description=LMC command server for LMC series
+After=syslog.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/lmc
+Nice=-10
+ExecStart=/home/pi/lmc/lmcserver.sh
+TimeoutStopSec=20
+StandardInput=null
+StandardOutput=null
+
+[Install]
+WantedBy = multi-user.target

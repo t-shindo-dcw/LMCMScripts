@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEMPLATE>
+<VERSION>4</VERSION>
+<COMMENT>LMC04 series(legacy) Horizontal 64x16dots (P10)  </COMMENT>
+<TILE>
+	<ID>1</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>56</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>2</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>48</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>3</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>40</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>4</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>32</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>5</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>24</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>6</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>16</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>7</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>8</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>8</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>9</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>10</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>8</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>11</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>16</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>12</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>24</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>13</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>32</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>14</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>40</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>15</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>48</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>16</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>56</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>17</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>56</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>18</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>48</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>19</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>40</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>20</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>32</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>21</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>24</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>22</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>16</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>23</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>8</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>24</ID>
+	<TileType>0</TileType>
+	<TileDirection>2</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>25</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>26</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>8</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>27</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>16</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>28</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>24</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>29</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>32</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>30</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>40</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>31</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>48</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>32</ID>
+	<TileType>0</TileType>
+	<TileDirection>1</TileDirection>
+	<TileLocation_X>56</TileLocation_X>
+	<TileLocation_Y>8</TileLocation_Y>
+	<TileLocation_W>8</TileLocation_W>
+	<TileLocation_H>8</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<LOCAL>
+	<XMin>0</XMin>
+	<XMax>64</XMax>
+	<YMin>0</YMin>
+	<YMax>16</YMax>
+	<MatrixScanlines>4</MatrixScanlines>
+	<MatrixColors>3</MatrixColors>
+	<MatrixLayoutMode>1</MatrixLayoutMode>
+	<MatrixColorMode>0</MatrixColorMode>
+	<MatrixYLineDecoded>1</MatrixYLineDecoded>
+	<MatrixEnablePolarity>0</MatrixEnablePolarity>
+	<MatrixDataPolarity>0</MatrixDataPolarity>
+	<MatrixClockPolarity>0</MatrixClockPolarity>
+</LOCAL>
+</TEMPLATE>

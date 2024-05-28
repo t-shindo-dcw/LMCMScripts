@@ -1,0 +1,16 @@
+
+[Unit]
+Description=LMC slave control for LMC series
+After=syslog.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/lmc
+Nice=-20
+ExecStart=/home/pi/lmc/lmcslave.sh
+TimeoutStopSec=20
+StandardInput=null
+StandardOutput=null
+
+[Install]
+WantedBy = multi-user.target

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEMPLATE>
+<VERSION>4</VERSION>
+<COMMENT>LMCM multi conttrol block2x1 Horizontal 256x192 </COMMENT>
+<BLOCK>
+	<ID>1</ID>
+	<BlockType>0</BlockType>
+	<BlockDirection>0</BlockDirection>
+	<BlockLocation_X>128</BlockLocation_X>
+	<BlockLocation_Y>0</BlockLocation_Y>
+	<BlockLocation_W>128</BlockLocation_W>
+	<BlockLocation_H>192</BlockLocation_H>
+	<BlockDotPitch>0</BlockDotPitch>
+	<BlockColorType>0</BlockColorType>
+	<BlockIP>192.168.43.201</BlockIP>
+</BLOCK>
+
+<BLOCK>
+	<ID>2</ID>
+	<BlockType>0</BlockType>
+	<BlockDirection>0</BlockDirection>
+	<BlockLocation_X>0</BlockLocation_X>
+	<BlockLocation_Y>0</BlockLocation_Y>
+	<BlockLocation_W>128</BlockLocation_W>
+	<BlockLocation_H>192</BlockLocation_H>
+	<BlockDotPitch>0</BlockDotPitch>
+	<BlockColorType>0</BlockColorType>
+	<BlockIP>192.168.43.202</BlockIP>
+</BLOCK>
+
+</TEMPLATE>

@@ -1,0 +1,4 @@
+#!/bin/sh -f
+sudo killall mplayer
+exit 0
+

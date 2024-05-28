@@ -1,0 +1,29 @@
+
+　LMC　提供SDカード　構成ファイルリスト
+
++-[lmcディレクトリ]
+   +-+- commandserver.py  Socket通信サーバとFTPサーバの動作監視を行うスクリプト
+     +- lmcinitializer.py  lmcの起動時に呼び出されるスクリプト USBアップデータ
+     +- lmcsupervisor.py  lmcコマンドサーバーの監視と再起動スクリプト
+     +- drawmessage.py  　コマンドサーバ用文字表示スクリプト
+     +- drawimage.py      コマンドサーバ用画像表示スクリプト
+     +- scheduler.py      スケジューラ管理スクリプト　 
+     +- lmc_common.py　   共通スクリプト
+     +- ftpserver.py　    FTPサーバ用スクリプト
+     +- multinodestartup.py マルチノード自動検索スクリプト
+     +- wifimanager.py    WiFi設定変更スクリプト（現在未使用）
+     +- killtree.py       プロセス強制階層停止スクリプト
+     +- lmcJSONtolanIDassign.py マルチコントロール自動設定スクリプト
+     +- lmcJSONtoXML.py    マルチコントロール自動設定スクリプト
+     +- lmclanscantoJSON.py マルチコントロール自動設定スクリプト
+     +- lmccommandclient.py コマンドサーバー呼び出しスクリプト例
+     +- SPICommand.py     LMCとのSPIコマンドライン通信スクリプト例
+     +- lmcserver.sh　    自動起動用シェル
+     +- lmcserver.service　自動起動用設定ファイル
+     +- autosetup.sh      lmcフォルダ全体の自動パーミッション設定シェル
+     +- sleep.sh          スケジューラ用スリープシェル
+     +- RTCinit.sh        RaspberryPi I2C接続のRTC起動スクリプト　現在未使用
+     +- LMCRPIT_config    設定ファイル
+     +- [LEDMultiControl] -+- 実行ファイル群
+     +- [pattern]         -+- 画面レイアウトパターンファイル
+     +- [user]            -+- 画像ファイル、スケジュールファイル

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEMPLATE>
+<VERSION>4</VERSION>
+<COMMENT>LMCM single control Horizontal (P10 32x16x48) 128x192dot 12lanes </COMMENT>
+<TILE>
+	<ID>0</ID>
+	<TileType>1</TileType>
+	<MatrixLane>0</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>1</ID>
+	<TileType>1</TileType>
+	<MatrixLane>1</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>16</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>2</ID>
+	<TileType>1</TileType>
+	<MatrixLane>2</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>32</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>3</ID>
+	<TileType>1</TileType>
+	<MatrixLane>3</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>48</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>4</ID>
+	<TileType>1</TileType>
+	<MatrixLane>4</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>64</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>5</ID>
+	<TileType>1</TileType>
+	<MatrixLane>5</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>80</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>6</ID>
+	<TileType>1</TileType>
+	<MatrixLane>6</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>96</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>7</ID>
+	<TileType>1</TileType>
+	<MatrixLane>7</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>112</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>8</ID>
+	<TileType>1</TileType>
+	<MatrixLane>8</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>128</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>9</ID>
+	<TileType>1</TileType>
+	<MatrixLane>9</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>144</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>10</ID>
+	<TileType>1</TileType>
+	<MatrixLane>10</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>160</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>11</ID>
+	<TileType>1</TileType>
+	<MatrixLane>11</MatrixLane>
+	<MatrixLaneOffset>0</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>176</TileLocation_Y>
+	<TileLocation_W>128</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+
+<LOCAL>
+	<XMin>0</XMin>
+	<XMax>128</XMax>
+	<YMin>0</YMin>
+	<YMax>192</YMax>
+	<MatrixScanlines>4</MatrixScanlines>
+	<MatrixColors>3</MatrixColors>
+	<MatrixLayoutMode>1</MatrixLayoutMode>
+	<MatrixColorMode>0</MatrixColorMode>
+	<MatrixYLineDecoded>1</MatrixYLineDecoded>
+	<MatrixEnablePolarity>0</MatrixEnablePolarity>
+	<MatrixDataPolarity>0</MatrixDataPolarity>
+	<MatrixClockPolarity>0</MatrixClockPolarity>
+	<LMCTilesTransferMode>1</LMCTilesTransferMode>
+</LOCAL>
+</TEMPLATE>

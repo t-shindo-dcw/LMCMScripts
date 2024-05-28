@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEMPLATE>
+<VERSION>4</VERSION>
+<COMMENT>LMCM single control Horizontal (P10 32x16x4) 64x32dot 2lanes </COMMENT>
+<TILE>
+	<ID>1</ID>
+	<TileType>1</TileType>
+	<MatrixLane>0</MatrixLane>
+	<MatrixLaneOffset>64</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>0</TileLocation_Y>
+	<TileLocation_W>64</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+<TILE>
+	<ID>2</ID>
+	<TileType>1</TileType>
+	<MatrixLane>1</MatrixLane>
+	<MatrixLaneOffset>64</MatrixLaneOffset>
+	<TileDirection>0</TileDirection>
+	<TileLocation_X>0</TileLocation_X>
+	<TileLocation_Y>16</TileLocation_Y>
+	<TileLocation_W>64</TileLocation_W>
+	<TileLocation_H>16</TileLocation_H>
+	<TileDotPitch>0</TileDotPitch>
+	<TileColorType>0</TileColorType>
+</TILE>
+
+<LOCAL>
+	<XMin>0</XMin>
+	<XMax>64</XMax>
+	<YMin>0</YMin>
+	<YMax>32</YMax>
+	<MatrixScanlines>4</MatrixScanlines>
+	<MatrixColors>3</MatrixColors>
+	<MatrixLayoutMode>1</MatrixLayoutMode>
+	<MatrixColorMode>0</MatrixColorMode>
+	<MatrixYLineDecoded>1</MatrixYLineDecoded>
+	<MatrixYLinePolarity>0</MatrixYLinePolarity>
+	<MatrixEnablePolarity>0</MatrixEnablePolarity>
+	<MatrixDataPolarity>0</MatrixDataPolarity>
+	<MatrixClockPolarity>0</MatrixClockPolarity>
+	<LMCTilesTransferMode>1</LMCTilesTransferMode>
+
+
+</LOCAL>
+</TEMPLATE>
