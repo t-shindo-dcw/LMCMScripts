@@ -5,7 +5,7 @@
 
 ## 新規のRaspianなどのOSからのインストールの手順を示します。
 
-1. [RaspianからのOSインストール](./lmc/Readme_RaspberryPiSetup.md)
+1. [RaspianからのOSインストール](./lmc/Readme_RaspberryPiOSSetup.md)
 
 
 2. [LMCファームウェアセットアップ](./lmc/Readme_lmcmanualinstallation.md)
