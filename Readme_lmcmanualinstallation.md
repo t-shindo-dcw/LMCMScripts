@@ -1,10 +1,10 @@
 # LMC　手動インストール手順
-    2023.8.29　DCraftWork
+    2024.5.21　DCraftWork
 
 すでに動作しているRaspberryPiのシステムに、手動で新規のコマンドサーバー群をインストールする方法です。
 
 RaspberryPi　手動インストール手順の続きとなります。
-既存のシステムのアップグレードも可能です。
+RaspberryPi OS bookworm(V12)で確認されています。
 
 ### LMC関連ファイルのインストール
 
@@ -16,6 +16,7 @@ RaspberryPi　手動インストール手順の続きとなります。
 ```
 
 `lmcpack.zip`を、RaspberryPiのユーザーディレクトリにコピー。SSHなどを使用。
+teratermであればファイルをteraterm画面へとドラッグアンドドロップするだけで転送が可能。
 `lmcpack.zip`は、NeCoWinのインストールディレクトリなどに格納されている。
 
 その後に、以下のコマンドを実行。PCからのSSHログインなどであれば、そのままコマンドラインにペーストしても良い。
@@ -28,6 +29,14 @@ RaspberryPi　手動インストール手順の続きとなります。
  sudo chmod +x autosetup.sh
  ./autosetup.sh
 
+```
+### ユーザー名をデフォルトの"pi"から変更
+以下のファイルの/home/pi/を/home/(username)/に変更する
+```
+lmcserver.service(8): WorkingDirectory=/home/pi/lmc
+lmcserver.service(10): ExecStart=/home/pi/lmc/lmcserver.sh
+lmcslave.service(8): WorkingDirectory=/home/pi/lmc
+lmcslave.service(10): ExecStart=/home/pi/lmc/lmcslave.sh
 ```
 
 ### コマンドサーバーの自動起動設定 
@@ -56,24 +65,7 @@ sudo apt-get install -y fonts-noto-color-emoji
 ユーザーディレクトリのフォントを利用可能にする。
 ```
 sudo nano /etc/fonts/fonts.conf
-
-
-
-
 ```
-
-    20240524
-    local.confを編集しろと警告が出る。
-    イカのファイルを/etc/fonts/local.confとして制作するべし。
-
-```
-<?xml version="1.0" ?>
-<!DOCTYPE fontconfig SYSTEM "font.dtd">
-<fontconfig>
-        <dir>~/lmc/user</dir>
-</fontconfig>
-```
-
 以下の記述を探す
 ```
        <dir>/usr/share/fonts</dir>
@@ -81,9 +73,9 @@ sudo nano /etc/fonts/fonts.conf
 ```
 この行の後に、
 ```
-	<dir>~/lmc/user</dir>
+	<dir>/home/pi/lmc/user</dir>
 ```
-を追加
+を追加(piはユーザー名を変更に合わせて書き換える)
 
 
 ### CPU周波数の設定補助
@@ -93,17 +85,12 @@ sudo apt-get install -y cpufrequtils
 ```
 
 ### config.txtの修正　SPIのマルチポート化
+
 ```
 sudo nano /boot/firmware/config.txt
 ```
-このファイルの中の以下の記述の次に
 
-```
-[pi4]
-# Run as fast as firmware / board allows
-arm_boost=1
-```
-以下の記述を追加する。
+このファイルの中の末尾に以下の記述を追加する。
 
 ```
 dtoverlay=spi0-1cs 
@@ -113,19 +100,20 @@ dtoverlay=spi3-1cs
 #dtoverlay=spi4-1cs 
 #dtoverlay=spi5-1cs 
 #dtoverlay=spi6-1cs 
-
 dtoverlay=spi-bcm2835
+
 ```
+(旧来のRaspberryPiOSでは/boot/config.txt)
 ### RPI4用のSPIのBufferSize拡大 
-パスが変わっていたので修正。firmwareディレクトリに入った。
 ```
 sudo nano /boot/firmware/cmdline.txt
 ```
- 以下の記述を改行せずにスペース区切りで追加 
+ 以下の記述を改行せずに追加 
 ```
  spidev.bufsiz=65536                
 ```
 
+(旧来のRaspberryPiOSでは/boot/cmdline.txt)
 ### bcm2835　SPIライブラリのインストール
 ```
 cd /tmp              
@@ -138,7 +126,20 @@ sudo make install
 
 ```
 
-### ffmpegライブラリのインストール　Ver3.3.9が必要
+### ffmpegライブラリのインストール　Ver3.3.9を使用
+
+`FFmpeg.tar.gz`を、RaspberryPiの/tmpの下にコピー。SSHなどを使用。
+	FFmpeg.tar.gzはNeCoWinのインストールディレクトリに格納されている。
+
+mv ~/FFmpeg.tar.gz /tmp
+cd /tmp
+tar -xvzf FFmpeg.tar.gz
+cd FFmpeg
+sudo make install
+
+```
+### ffmpegライブラリは最初からmakeすることも可能。ただし最新版のOSでは動作しない模様。
+
 ```
 cd /tmp
 sudo apt update
@@ -156,13 +157,23 @@ make -j4
 sudo make install
 
 ```
+
+('git checkout n3.4'にすべき？）
+
 ### libx264.so.138がないのでインストールディレクトリから強制的にコピー
 ```
 sudo cp ~/lmc/libx264.so.138 /lib/arm-linux-gnueabihf/
-sudo cp ~/lmc/libx265.so.165 /lib/arm-linux-gnueabihf/
 sudo cp ~/lmc/libx264.so.155 /lib/arm-linux-gnueabihf/
-```
+sudo cp ~/lmc/libx265.so.165 /lib/arm-linux-gnueabihf/
 
+```
+### pigpioモジュールのインストール I/Oポートアクセス
+```
+sudo apt install pigpio python3-pigpio
+sudo systemctl enable pigpiod
+sudo systemctl start pigpiod
+
+```
 ### 最後に、以下を実行。これが重要。
 ```
 sudo ldconfig
