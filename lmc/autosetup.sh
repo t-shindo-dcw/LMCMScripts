@@ -15,4 +15,3 @@ sudo chmod a+w image
 cd LEDMultiControl
 sudo chmod +x LEDMultiControl
 sudo chmod +x LEDMultiControl_LMC04
-sudo chown -R root:root ~/lmc

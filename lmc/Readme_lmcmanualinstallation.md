@@ -19,19 +19,28 @@ RaspberryPi OS bookworm(V12)で確認されています。
 teratermであればファイルをteraterm画面へとドラッグアンドドロップするだけで転送が可能。
 `lmcpack.zip`は、NeCoWinのインストールディレクトリなどに格納されている。
 
-その後に、以下のコマンドを実行。PCからのSSHログインなどであれば、そのままコマンドラインにペーストしても良い。
-
 ```
  cd /home/pi/
  unzip lmcpack.zip
  cd ~/lmc
 
- sudo chmod +x autosetup.sh
- ./autosetup.sh
+```
+
+GitHubのリポジトリからのダウンロードも可能。その場合、LMCMScriptsディレクトリ下にスクリプトが作成される。
 
 ```
+git clone https://github.com/t-shindo-dcw/LMCMScripts.git
+```
+
+その後に、以下のコマンドを実行。PCからのSSHログインなどであれば、そのままコマンドラインにペーストしても良い。
+
+```
+sudo chmod +x autosetup.sh
+./autosetup.sh
+```
+
 ### ユーザー名をデフォルトの"pi"から変更
-以下のファイルの/home/pi/を/home/(username)/に変更する
+lmcディレクトリにある以下のファイルの/home/pi/を/home/(username)/に変更する
 ```
 lmcserver.service(8): WorkingDirectory=/home/pi/lmc
 lmcserver.service(10): ExecStart=/home/pi/lmc/lmcserver.sh
@@ -44,7 +53,7 @@ lmcslave.service(10): ExecStart=/home/pi/lmc/lmcslave.sh
 
 ```
 cd ~/lmc
-sudo mv lmcserver.service /etc/systemd/system/
+sudo cp lmcserver.service /etc/systemd/system/
 cd /etc/systemd/system
 sudo chmod +x lmcserver.service
 sudo systemctl enable lmcserver
@@ -68,8 +77,9 @@ sudo nano /etc/fonts/fonts.conf
 ```
 以下の記述を探す
 ```
-       <dir>/usr/share/fonts</dir>
-        <dir>/usr/X11R6/lib/X11/fonts</dir> <dir>/usr/local/share/fonts</dir>
+<!-- Font directory list -->
+    <dir>/usr/share/fonts</dir>
+    <dir>/usr/local/share/fonts</dir>    
 ```
 この行の後に、
 ```
@@ -128,9 +138,11 @@ sudo make install
 
 ### ffmpegライブラリのインストール　Ver3.3.9を使用
 
-`FFmpeg.tar.gz`を、RaspberryPiの/tmpの下にコピー。SSHなどを使用。
-	FFmpeg.tar.gzはNeCoWinのインストールディレクトリに格納されている。
+FFmpeg.tar.gz`を、RaspberryPiの/tmpの下にコピー。SSHなどを使用。
 
+FFmpeg.tar.gzはNeCoWinのインストールディレクトリに格納されている。
+
+```
 mv ~/FFmpeg.tar.gz /tmp
 cd /tmp
 tar -xvzf FFmpeg.tar.gz
@@ -155,17 +167,16 @@ git checkout n3.3.9
 ./configure --enable-gpl --enable-libx264 --enable-libx265 --enable-nonfree --disable-doc --arch=armhf --target-os=linux --enable-libv4l2 --enable-libpulse --enable-shared
 make -j4
 sudo make install
-
 ```
 
-('git checkout n3.4'にすべき？）
+('git checkout n3.4'にすべき？)
+
 
 ### libx264.so.138がないのでインストールディレクトリから強制的にコピー
 ```
 sudo cp ~/lmc/libx264.so.138 /lib/arm-linux-gnueabihf/
 sudo cp ~/lmc/libx264.so.155 /lib/arm-linux-gnueabihf/
 sudo cp ~/lmc/libx265.so.165 /lib/arm-linux-gnueabihf/
-
 ```
 ### pigpioモジュールのインストール I/Oポートアクセス
 ```
